@@ -1,4 +1,5 @@
 package mergeSort;
+
 import java.util.Random;
 
 class MergeSort {
@@ -37,12 +38,12 @@ class MergeSort {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int t = 10 ;
+        int t = 10;
         for (int i = 0; i < t; i++) {
-            
-            int n = rand.nextInt(10000) +1;
-            
-            int arr[] = new int[n];           
+
+            int n = rand.nextInt(10000) + 1;
+
+            int arr[] = new int[n];
 
             for (int k = 0; k < n; k++) {
                 arr[k] = rand.nextInt(10000);
@@ -52,14 +53,17 @@ class MergeSort {
             int[] aux = new int[n];
 
             sorter.runMergeSort(arr, 0, n - 1, aux);
-
+            boolean correct = true ;
             for (int m = 0; m < n - 1; m++) {
                 if (arr[m] > arr[m + 1]) {
-                    System.out.println("WRONG");
+                    correct = false ;
                     break;
                 }
             }
-            System.out.println("RIGHT");
+            if (correct)
+                System.out.println("RIGHT");
+            else
+                System.out.println("WRONG");
         }
     }
 }
