@@ -1,0 +1,6 @@
+- Algorithm, is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output.
+- The statement of the problem specifies in general terms the desired input/output relationship. The algorithm describes a specific computational procedure for achieving that input/output relationship.
+- An instance of a problem consists of the input (satisfying whatever constraints are imposed in the problem statement) needed to compute a solution to the problem.
+- An algorithm is said to be correct if, for every input instance, it halts with the correct output.
+- An incorrect algorithm might not halt at all on some input instances, or it might halt with an incorrect answer,but sometimes incorrect algorithms can sometimes be useful, if we can control their error rate.
+- A data structure is a way to store and organize data in order to facilitate access and modifications.
